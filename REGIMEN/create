@@ -1,0 +1,4 @@
+CREATE TABLE `REGIMEN` (
+    `tipo_reg` varchar(5),
+    PRIMARY KEY(tipo_reg)
+);

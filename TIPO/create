@@ -1,0 +1,4 @@
+CREATE TABLE `TIPO` (
+    `tipo_hab` varchar(10),
+    PRIMARY KEY(tipo_hab)
+);

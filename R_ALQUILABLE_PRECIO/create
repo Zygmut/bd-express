@@ -1,0 +1,7 @@
+CREATE TABLE `R_ALQUILABLE_PRECIO` (
+    `id_alq` int(4),
+    `id_pre` int(4),
+    PRIMARY KEY(id_alq, id_pre),
+    FOREIGN KEY(id_alq) REFERENCES ALQUILABLE(id_alq),
+    FOREIGN KEY(id_pre) REFERENCES PRECIO(id_pre)
+);

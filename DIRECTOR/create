@@ -1,0 +1,7 @@
+CREATE TABLE `DIRECTOR` (
+    `id_dir` varchar(9),
+    `telefono_dir` int(9),
+    `mail` varchar(30),
+    PRIMARY KEY(id_dir),
+    FOREIGN KEY(id_dir) REFERENCES PERSONA(id_per)
+);

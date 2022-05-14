@@ -1,0 +1,7 @@
+CREATE TABLE `INSTALACION` (
+    `id_ins` int(4) AUTO_INCREMENT,
+    `nombre_ins` varchar(20) NOT NULL,
+    `nombre_hot` varchar(100) ,
+    PRIMARY KEY(id_ins),
+    FOREIGN KEY(nombre_hot) REFERENCES HOTEL(nombre_hot)
+);

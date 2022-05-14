@@ -1,0 +1,7 @@
+CREATE TABLE `TARJETA` (
+    `id_tar` int(16),
+    `tipo_tar` varchar(20) NOT NULL,
+    `id_cli` varchar(9) ,
+    PRIMARY KEY(id_tar),
+    FOREIGN KEY(id_cli) REFERENCES CLIENTE(id_cli)
+);

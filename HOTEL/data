@@ -1,0 +1,13 @@
+INSERT INTO HOTEL VALUES 
+('Canyes Blanques', '3', '1856-02-12','Avinguda Joan Servera 07560','971795682'),
+('Condesa', '2', '1792-12-24','Carrer de les Roselles', '971542365'),
+('Citric Soller', '1', '1864-06-09','Camino del Faro', '971548763'),
+('Saratoga ', '4', '1972-10-19','Passeig de Mallorca', '971850004'),
+('Nordeste Playa', '3', '1856-02-12','Calle Via Francia', '971236548'),
+('PortBlue Club Pollentia Resort & Spa', 5, '1990-01-26','Ctra. Alcúdia', '971485276'),
+('Tent Capi Playa', '3', '1896-04-15','Carrer de la Costa Brava', '971548996'),
+('Amic Horizonte', '3', '1786-03-01','Calle Vista Alegre', '971258745'),
+('Estrella', '2', '1780-10-02','Calle Currica', '966357485'),
+('Cappuccino', '5', '1930-12-25','Plaza de Cort', '600148753'),
+('Vell Mari Hotel & Resort', '4', '1960-05-11','Carretera Artà-Alcúdia', '971368745'),
+('Hostal Bonany', '1', '1992-11-04','Calle Almirante Cervera','971548263');

@@ -1,0 +1,9 @@
+CREATE TABLE `PRECIO` (
+    `id_pre` int(4) AUTO_INCREMENT,
+    `precio` int(10) NOT NULL,
+    `id_tem` int(4) NOT NULL,
+    `tipo_reg` varchar(5) NOT NULL,
+    PRIMARY KEY(id_pre),
+    FOREIGN KEY(id_tem) REFERENCES TEMPORADA(id_tem),
+    FOREIGN KEY(tipo_reg) REFERENCES REGIMEN(tipo_reg)
+);

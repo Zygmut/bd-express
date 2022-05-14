@@ -1,0 +1,8 @@
+CREATE TABLE `USO` (
+    `id_uso` int(4) AUTO_INCREMENT,
+    `id_alq` int(4),
+    `id_res` int(4),
+    PRIMARY KEY(id_uso),
+    FOREIGN KEY(id_alq) REFERENCES ALQUILABLE(id_alq),
+    FOREIGN KEY(id_res) REFERENCES RESERVA(id_res)
+);

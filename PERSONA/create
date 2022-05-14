@@ -1,0 +1,6 @@
+CREATE TABLE `PERSONA` (
+    `id_per` varchar(9) ,
+    `tipo_id` ENUM('dni', 'pasaporte'),
+    `nombre` varchar(20),
+    PRIMARY KEY(id_per)
+);

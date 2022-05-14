@@ -1,0 +1,8 @@
+CREATE TABLE `HOTEL` (
+    `nombre_hot` varchar(100) ,
+    `estrellas_hot` int(1) NOT NULL CHECK(0 < estrellas_hot AND estrellas_hot <= 5),
+    `creacion` DATE NOT NULL ,
+    `direccion` varchar(50) NOT NULL ,
+    `telefono_hot` int(9) ,
+    PRIMARY KEY(nombre_hot)
+);

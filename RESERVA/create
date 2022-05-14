@@ -1,0 +1,10 @@
+CREATE TABLE `RESERVA` (
+    `id_res` int(4) AUTO_INCREMENT, 
+    `fecha_ini_res` DATE NOT NULL, 
+    `fecha_fin_res` DATE NOT NULL, 
+    `tipo_reg` varchar(5) NOT NULL, 
+    `num_tar` int(16) NOT NULL , 
+    PRIMARY KEY(id_res),
+    FOREIGN KEY(tipo_reg) REFERENCES REGIMEN(tipo_reg),
+    FOREIGN KEY(num_tar) REFERENCES TARJETA(id_tar)
+);

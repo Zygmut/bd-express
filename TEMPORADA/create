@@ -1,0 +1,7 @@
+CREATE TABLE `TEMPORADA` (
+    `id_tem` int(4) AUTO_INCREMENT,
+    `tipo_tem` ENUM('baja', 'media', 'alta'),
+    `fecha_ini_tem` date,
+    `fecha_fin_tem` date,
+    PRIMARY KEY(id_tem)
+);

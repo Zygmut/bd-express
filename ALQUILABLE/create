@@ -1,0 +1,5 @@
+CREATE TABLE `ALQUILABLE` (
+    `id_alq` int(4),
+    PRIMARY KEY(id_alq),
+    FOREIGN KEY(id_alq) REFERENCES INSTALACION(id_ins) 
+);

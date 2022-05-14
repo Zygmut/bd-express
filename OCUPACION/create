@@ -1,0 +1,10 @@
+CREATE TABLE `OCUPACION` (
+    `id_ocu` int(4) AUTO_INCREMENT,
+    `fecha_ini_ocu` DATE NOT NULL,
+    `fecha_fin_ocu` DATE,
+    `nombre_hot` varchar(100) NOT NULL,
+    `id_dir` varchar(9) NOT NULL,
+    PRIMARY KEY(id_ocu),
+    FOREIGN KEY(nombre_hot) REFERENCES HOTEL(nombre_hot),
+    FOREIGN KEY(id_dir) REFERENCES DIRECTOR(id_dir)
+);

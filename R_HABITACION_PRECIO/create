@@ -1,0 +1,7 @@
+CREATE TABLE `R_HABITACION_PRECIO` (
+    `id_hab` int(4),
+    `id_pre` int(4),
+    PRIMARY KEY(id_hab, id_pre),
+    FOREIGN KEY(id_hab) REFERENCES HABITACION(id_hab),
+    FOREIGN KEY(id_pre) REFERENCES PRECIO(id_pre)
+);
