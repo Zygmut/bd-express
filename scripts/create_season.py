@@ -6,9 +6,7 @@ def main():
     firstYear = 2019
     lastYear = 2022
 
-    f = open("seasonsData.out", "a")
-
-    f.write("INSERT INTO temporada VALUES\n")
+    print("INSERT INTO TEMPORADA (tipo_tem, fecha_ini_tem, fecha_fin_tem) VALUES")
     for i in range(firstYear, lastYear+1):
 
         rTemporadaBaja = random.randint(1,31)
@@ -17,8 +15,8 @@ def main():
         iniTempBaja = getDate(i, 1, 1)
         finTempBaja = getDate(i, 5, rTemporadaBaja)
 
-        f.write(values_to_string(['baja', iniTempBaja, finTempBaja]))
-        f.write(",\n")
+        print(values_to_string(['baja', iniTempBaja, finTempBaja]), end="")
+        print(",")
 
         iniTempAlta = ""
 
@@ -29,8 +27,8 @@ def main():
 
         finTempAlta = getDate(i, 9, rTemporadaAlta)
 
-        f.write(values_to_string(['alta', iniTempAlta, finTempAlta]))
-        f.write(",\n")
+        print(values_to_string(['alta', iniTempAlta, finTempAlta]), end="")
+        print(",")
 
         iniTempMedia = ""
 
@@ -41,12 +39,17 @@ def main():
 
         finTempMedia = getDate(i, 12, 31)
 
-        f.write(values_to_string(['media', iniTempMedia, finTempMedia]))
+        print(values_to_string(['media', iniTempMedia, finTempMedia]), end="")
 
         if i != lastYear:
-            f.write(",\n")
+            print(",")
         else:
-            f.write(";\n")
+            print(";\n")
+
+        with open("DATA_SEASONS.out", "w") as file:
+            file.write(str(1 + lastYear - firstYear))
+
+        
     
 
 def getDate(y, m, d):
