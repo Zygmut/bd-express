@@ -6,7 +6,7 @@ def main():
     firstYear = 2019
     lastYear = 2022
 
-    f = open("seasonsData.txt", "a")
+    f = open("seasonsData.out", "a")
 
     f.write("INSERT INTO temporada VALUES\n")
     for i in range(firstYear, lastYear+1):

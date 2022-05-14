@@ -6,9 +6,9 @@ def main():
     firstYear = 2019
     lastYear = 2022
 
-    f = open("bookingData.txt", "a")
+    f = open("bookingData.out", "a")
 
-    f.write("INSERT INTO temporada VALUES\n")
+    f.write("INSERT INTO RESERVA (fecha_ini_res, fecha_fin_res, tipo_reg) VALUES\n")
 
     for i in range (firstYear, lastYear):
         start_date = datetime.date(i, 1, 1)

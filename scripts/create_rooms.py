@@ -9,7 +9,7 @@ def main():
     firstRoomNumber = 100
     lastRoomNumber = 150
 
-    f = open("roomsData.txt", "a")
+    f = open("roomsData.out", "a")
     f.write("INSERT INTO habitacion (num_hab, nombre_hot, tipo_hab) VALUES\n")
 
     for i in range(len(hotelNames)):
