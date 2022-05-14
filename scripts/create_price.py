@@ -22,7 +22,11 @@ def main():
 def create_prices():
     print("INSERT INTO PRECIO (precio, id_tem, tipo_reg) VALUES")
     for i in range(args.number):
-        print(values_to_string([randrange(args.minPrice,args.maxPrice), randrange(1, N_TEM), random.choice(REG)] ))
+        print(values_to_string([randrange(args.minPrice,args.maxPrice), randrange(1, N_TEM), random.choice(REG)] ), end="")
+        if i != (args.number - 1):
+            print(",")
+        else:
+            print(";")
 
 def link_hot():
     pass
