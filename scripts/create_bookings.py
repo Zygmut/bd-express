@@ -1,14 +1,18 @@
-import random
-import datetime
+import random, os, datetime
+
+NUM_TAR = []
 
 def main():
     tipoRegimen = ['SH', 'HD', 'MP', 'PC']
     firstYear = 2019
     lastYear = 2022
 
+    with open (os.getcwd() + "/DATA_NUM_TAR.out", "r") as file:
+        NUM_TAR = file.read().splitlines()
+
     f = open("bookingData.out", "a")
 
-    f.write("INSERT INTO RESERVA (fecha_ini_res, fecha_fin_res, tipo_reg) VALUES\n")
+    f.write("INSERT INTO RESERVA (fecha_ini_res, fecha_fin_res, tipo_reg, num_tar) VALUES\n")
 
     for i in range (firstYear, lastYear):
         start_date = datetime.date(i, 1, 1)
@@ -20,7 +24,7 @@ def main():
 
             regimenRandom = random.randint(0,3)
 
-            f.write(values_to_string([rInitDate, rFinDate, tipoRegimen[regimenRandom]]))
+            f.write(values_to_string([rInitDate, rFinDate, tipoRegimen[regimenRandom], random.choice(NUM_TAR)]))
 
             if i == lastYear and j == 50:
                 f.write(";\n")

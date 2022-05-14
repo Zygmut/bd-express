@@ -9,7 +9,7 @@ def main():
 
     payer_cli_prop = 0.3
 
-    with open(os.getcwd() + "/ID_CLI.out", "r") as file:
+    with open(os.getcwd() + "/DATA_ID_CLI.out", "r") as file:
         ID_CLI = file.read().splitlines()
     
     print("INSERT INTO TARJETA VALUES")
@@ -21,6 +21,10 @@ def main():
             print(",")
         else:
             print(";")
+
+    with open(os.getcwd() + "/DATA_NUM_TAR.out", "w") as file:
+        for i in range(len(NUM_TAR)):
+            file.write(NUM_TAR[i] + "\n")
    
 def values_to_string(values):
     return_v = "("

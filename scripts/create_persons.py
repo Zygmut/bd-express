@@ -74,7 +74,7 @@ def create_clis():
             print(",")
         else:
             print(";")
-    with open(os.getcwd() + f"/ID_CLI.out", "w") as file:
+    with open(os.getcwd() + "/DATA_ID_CLI.out", "w") as file:
         for i in range(len(ID_CLI)):
             file.write(ID_CLI[i] + "\n")
 
