@@ -47,11 +47,8 @@ def main():
             print(";\n")
 
         with open("DATA_SEASONS.out", "w") as file:
-            file.write(str(1 + lastYear - firstYear))
-
+            file.write(str((1 + lastYear - firstYear)*3))
         
-    
-
 def getDate(y, m, d):
     return date(year = y, month = m, day = d)
 

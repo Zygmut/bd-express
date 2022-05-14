@@ -8,8 +8,13 @@ parser.add_argument('-mp', '--minPrice',  help="Min price value", default=100, t
 args = parser.parse_args()
 
 REG = ["SH", "HD", "MP", "PC"]
+with open("DATA_SEASONS.out", "r") as file:
+    N_TEM = int(file.read())
 
 def main():
+
+
+    print(N_TEM)
     create_prices()
     link_hot()
     link_alq()
@@ -17,7 +22,7 @@ def main():
 def create_prices():
     print("INSERT INTO PRECIO (precio, id_tem, tipo_reg) VALUES")
     for i in range(args.number):
-        print(values_to_string([randrange(args.minPrice,args.maxPrice)]))
+        print(values_to_string([randrange(args.minPrice,args.maxPrice), randrange(1, N_TEM), random.choice(REG)] ))
 
 def link_hot():
     pass
