@@ -14,10 +14,10 @@ def main():
 
     f.write("INSERT INTO RESERVA (fecha_ini_res, fecha_fin_res, tipo_reg, num_tar) VALUES\n")
 
-    for i in range (firstYear, lastYear):
+    for i in range (firstYear, lastYear+1):
         start_date = datetime.date(i, 1, 1)
         end_date = datetime.date(i, 12, 31)
-        for j in range (1, 51):
+        for j in range(len(NUM_TAR) * 2):
             rInitDate = randomDate(start_date, end_date)
             r = random.randint(1, 30)
             rFinDate = rInitDate + datetime.timedelta(days=r)
@@ -26,7 +26,7 @@ def main():
 
             f.write(values_to_string([rInitDate, rFinDate, tipoRegimen[regimenRandom], random.choice(NUM_TAR)]))
 
-            if i == lastYear and j == 50:
+            if i == lastYear and j == (len(NUM_TAR)*2) -1:
                 f.write(";\n")
             else:
                 f.write(",\n")
