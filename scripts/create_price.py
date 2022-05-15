@@ -12,9 +12,6 @@ with open("DATA_SEASONS.out", "r") as file:
     N_TEM = int(file.read())
 
 def main():
-
-
-    print(N_TEM)
     create_prices()
     link_hot()
     link_alq()

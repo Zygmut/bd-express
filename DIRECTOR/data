@@ -1,2 +1,4 @@
-INSERT INTO  VALUES
-()
+INSERT INTO DIRECTOR VALUES
+('A51561G', '684371845', 'cindy.russo@gmail.com'),
+('F18117A', '544088491', 'micah.hopkins@gmail.com'),
+('L55535J', '878831162', 'aubrey.holden@gmail.com');

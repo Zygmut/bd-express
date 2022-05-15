@@ -6,8 +6,8 @@ def main():
     'Nordeste Playa', 'PortBlue Club Pollentia Resort & Spa', 'Tent Capi Playa', 
     'Amic Horizonte', 'Estrella', 'Cappuccino', 'Vell Mari Hotel & Resort', 'Hostal Bonany']
 
-    firstRoomNumber = 100
-    lastRoomNumber = 150
+    firstRoomNumber = 300 
+    lastRoomNumber = 351
 
     f = open("roomsData.out", "a")
     f.write("INSERT INTO habitacion (num_hab, nombre_hot, tipo_hab) VALUES\n")

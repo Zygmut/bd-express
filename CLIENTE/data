@@ -1,2 +1,13 @@
 INSERT INTO CLIENTE VALUES
-('27272727', 'España UwU', 'adulto');
+('T01537B', 'Ucrania', 'bebe'),
+('32140877C', 'Francia', 'bebe'),
+('S02349F', 'España', 'adulto'),
+('58816435V', 'Francia', 'bebe'),
+('26310300Y', 'España', 'adulto'),
+('95096447L', 'Polonia', 'bebe'),
+('98291868B', 'Francia', 'adulto'),
+('R05161I', 'España', 'niño'),
+('42123811Y', 'Estados unidos', 'bebe'),
+('Q69428L', 'Polonia', 'adulto'),
+('U92446I', 'Ucrania', 'adulto'),
+('82632185O', 'Francia', 'niño');
