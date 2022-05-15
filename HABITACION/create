@@ -1,7 +1,7 @@
 CREATE TABLE `HABITACION` (
     `id_hab` int(4) AUTO_INCREMENT,
     `num_hab` int(3) NOT NULL,
-    `nombre_hot` varchar(010) ,
+    `nombre_hot` varchar(100) ,
     `tipo_hab` varchar(10) NOT NULL,
     PRIMARY KEY(id_hab),
     FOREIGN KEY(nombre_hot) REFERENCES HOTEL(nombre_hot),
