@@ -1,4 +1,4 @@
-INSERT INTO habitacion (num_hab, nombre_hot, tipo_hab) VALUES
+INSERT INTO HABITACION (num_hab, nombre_hot, tipo_hab) VALUES
 ('300', 'Canyes Blanques', 'doble'),
 ('301', 'Canyes Blanques', 'doble'),
 ('302', 'Canyes Blanques', 'doble'),
