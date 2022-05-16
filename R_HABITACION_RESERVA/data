@@ -8,7 +8,7 @@ INSERT INTO R_HABITACION_RESERVA VALUES
 ('29', '7'),
 ('30', '8'),
 ('7', '9'),
-('34', '10'),  -- Reserva 33 cb
+('34', '10'),  -- Reserva 333 cb
 ('600', '11'),
 ('546', '12'),
 ('376', '13'),
