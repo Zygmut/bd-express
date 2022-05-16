@@ -19,7 +19,11 @@ def create_prices():
     print("INSERT INTO PRECIO (precio, id_tem, tipo_reg) VALUES")
     for i in range(N_TEM ):
         for j in range(len(REG)):
-            print(values_to_string([randrange(args.minPrice,args.maxPrice), i+1, REG[j]] ), end="")
+            print(values_to_string([randrange(args.minPrice,args.maxPrice), i+1, REG[j]] ), end=",\n")
+            print(values_to_string([randrange(args.minPrice,args.maxPrice), i+1, REG[j]] ), end=",\n")
+
+            print(values_to_string([randrange(50, 100), i+1, REG[j]] ), end=",\n")
+            print(values_to_string([randrange(50, 100), i+1, REG[j]] ), end="")
             
             if i == N_TEM-1:
                 if j == len(REG)-1:
