@@ -10,4 +10,5 @@ INSERT INTO CLIENTE VALUES
 ('42123811Y', 'Estados unidos', 'bebe'),
 ('Q69428L', 'Polonia', 'adulto'),
 ('U92446I', 'Ucrania', 'adulto'),
-('82632185O', 'Francia', 'niño');
+('82632185O', 'Francia', 'niño'),
+('A51561G', 'Polonia', 'adulto'); -- Director
