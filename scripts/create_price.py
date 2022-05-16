@@ -2,7 +2,6 @@ import argparse, os, random
 from random import randrange
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-n', '--number', help="Number of prices to generate", default=10, type=int)
 parser.add_argument('-Mp', '--maxPrice',  help="Max price value", default=1000, type=int)
 parser.add_argument('-mp', '--minPrice',  help="Min price value", default=100, type=int)
 args = parser.parse_args()
@@ -18,12 +17,17 @@ def main():
 
 def create_prices():
     print("INSERT INTO PRECIO (precio, id_tem, tipo_reg) VALUES")
-    for i in range(args.number):
-        print(values_to_string([randrange(args.minPrice,args.maxPrice), randrange(1, N_TEM), random.choice(REG)] ), end="")
-        if i != (args.number - 1):
-            print(",")
-        else:
-            print(";")
+    for i in range(N_TEM ):
+        for j in range(len(REG)):
+            print(values_to_string([randrange(args.minPrice,args.maxPrice), i+1, REG[j]] ), end="")
+            
+            if i == N_TEM-1:
+                if j == len(REG)-1:
+                    print(";")
+                else:
+                    print(",")
+            else:
+                print(",")
 
 def link_hot():
     pass
