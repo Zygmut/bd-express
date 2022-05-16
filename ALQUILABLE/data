@@ -1,14 +1,14 @@
 INSERT INTO ALQUILABLE VALUES
-('3'),
-('7'),
-('8'),
-('10'),
-('11'),
-('13'),
-('14'),
-('15'),
-('19'),
-('20'),
-('22'),
-('24'),
-('25');
+('3'),  -- cb
+('7'),  -- condesa
+('8'),  -- citric soller
+('10'), -- Saratoga
+('11'), -- Saratoga
+('13'), -- Nordeste
+('14'), -- Nordeste
+('15'), -- Spa
+('19'), -- Tent Capi
+('20'), -- Estrella
+('22'), -- Estrella
+('24'), -- Bonaby
+('25'); -- Bonany
