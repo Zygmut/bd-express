@@ -29,7 +29,7 @@ INSERT INTO PERSONA VALUES
 ('F78541K','passaporte','Nathan Dubois'),
 ('F98532S','passaporte','Louis Robert'),
 ('F86229W','passaporte','Gabriel Durand'),
-('F45612Q','passaporte','Jules'Moreau),
+('F45612Q','passaporte','Jules Moreau'),
 ('C01478R','passaporte','Mei Wang'),
 ('C57431O','passaporte','Xiang Zhang'),
 ('C12354P','passaporte','Yun Xhia'),
