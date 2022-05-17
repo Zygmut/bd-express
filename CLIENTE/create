@@ -1,7 +1,7 @@
 CREATE TABLE `CLIENTE` (
     `id_cli` varchar(9) ,
     `nacionalidad` varchar(20) ,
-    `etapa_vida` ENUM('bebe', 'niño', 'adulto') ,
+    `etapa_vida` ENUM('bebe', 'ninyo', 'adulto') ,
     PRIMARY KEY(id_cli),
     FOREIGN KEY(id_cli) REFERENCES PERSONA(id_per)
 );

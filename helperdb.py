@@ -9,13 +9,13 @@ tables = ["TEMPORADA", "REGIMEN", "HOTEL", "TIPO", "HABITACION", "INSTALACION", 
 def main():
     for table in tables:
         if args.mode == 'tables':
-            with open(f"{table}/create", "r") as file: print(file.read() + "\n")
+            with open(f"{table}/create", "r", encoding='utf-8') as file: print(file.read() + "\n")
 
         elif args.mode == "data":
-            with open(f"{table}/data", "r") as file: print(file.read() + "\n")
+            with open(f"{table}/data", "r", encoding='utf-8') as file: print(file.read() + "\n")
         else:
-            with open(f"{table}/create", "r") as file: print(file.read() + "\n")
-            with open(f"{table}/data", "r") as file: print(file.read() + "\n")
+            with open(f"{table}/create", "r", encoding='utf-8') as file: print(file.read() + "\n")
+            with open(f"{table}/data", "r", encoding='utf-8') as file: print(file.read() + "\n")
 
 if __name__ == "__main__":
     main()
