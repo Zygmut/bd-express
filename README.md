@@ -1,2 +1,2 @@
 # bd-express
-PANIC!
+El script `bd-helper` permite la creación de todo el documento. 
